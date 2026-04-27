@@ -36,11 +36,24 @@ a:active{
   font-size: 24px;
 }
 
-p.captoin{
+p.caption{
     font-size: 14px;
     color: rgb(96, 75, 104);
     font-style: oblique;
-    margin: 0;
+    margin: 20;
+    padding-right: 20px;
+}
+
+.character-list li {
+  overflow: auto; 
+  margin-bottom: 20px;
+}
+
+.character-list img {
+  float: left;
+  width: 150px; 
+  margin: 0 15px 10px 0;
+  border-radius: 50%;
 }
 
 header{
