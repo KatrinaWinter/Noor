@@ -1,3 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.nunito-<uniquifier> {
+  
+}
 body{
-    background-color: goldenrod;
+    background-color: rgb(192, 132, 192);
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    text-align: center;
+    background-color:rgb(156, 4, 226);
+    padding: 20px;
+}
+
+header img{
+    width: 200px;
+    height: 200px;
+    border: 12px solid rgb(143, 150, 177);
+    border-radius: 50%;
+}
+
+header h1{
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 70px;
+  margin: 10px 0 20px 0;
+  color: rgb(143, 150, 177);
+}
+header h2{
+    font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 25px;
+  margin: 10px 0 20px 0;
+  color: rgb(143, 150, 177);
 }
