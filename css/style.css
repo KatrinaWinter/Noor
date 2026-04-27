@@ -1,15 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-.nunito-<uniquifier> {
-  
-}
 body{
     background-color: rgb(192, 132, 192);
+    font-family: 'Times New Roman', Times, serif;
 }
 
 html, body{
     margin: 0;
     padding: 0;
+}
+
+p, ul, ol{
+    font-size: 16px;
+    line-height: 28px;
+}
+
+ul, ol{
+    padding: 0;
+    list-style-position: inside;
+}
+
+a, a:visited{
+    color: blueviolet;
+}
+
+a:hover{
+     color: rgb(43, 122, 226);
+}
+
+a:active{
+     color: rgb(4, 97, 32);    
+}
+
+.character-list li {
+  font-size: 24px;
+}
+
+p.captoin{
+    font-size: 14px;
+    color: rgb(96, 75, 104);
+    font-style: oblique;
+    margin: 0;
 }
 
 header{
@@ -25,7 +56,7 @@ header img{
     border-radius: 50%;
 }
 
-header h1{
+ h1{
   font-family: "PT Serif", serif;
   font-weight: 400;
   font-style: italic;
@@ -40,4 +71,25 @@ header h2{
   font-size: 25px;
   margin: 10px 0 20px 0;
   color: rgb(143, 150, 177);
+}
+
+main{
+    width: 800px;
+    margin: 0 auto;
+}
+
+main img{
+    max-width: 100%;
+    border: 5px solid rgb(50, 52, 59);
+    border-radius: 5%;
+}
+
+    
+main h2{
+    font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 35px;
+  margin: 20px 0;
+  color: rgb(0, 1, 7);
 }
