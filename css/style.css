@@ -171,6 +171,7 @@ footer {
   background: linear-gradient(180deg, rgb(90, 0, 130), rgb(173, 78, 218));
   padding: 30px 20px;
   text-align: center;
+  margin-top: 50px;
 }
 
 footer .content {
