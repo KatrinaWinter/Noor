@@ -29,6 +29,11 @@
     margin-bottom: 10px;
   }
 
+  .card-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
   p {
     font-size: 0.9rem;
     line-height: 24px;
@@ -89,8 +94,8 @@ p.caption {
 
 .character-list li {
   display: flex;
-  align-items: center;
-  gap: 15px;
+  flex-direction: column;
+  gap: 10px;
 
   background: rgba(255, 255, 255, 0.08);
   border: 2px solid rgba(143, 150, 177, 0.4);
@@ -112,8 +117,7 @@ p.caption {
 .character-list a {
   font-size: 1.3rem;
   font-weight: bold;
-  display: block;
-  margin-bottom: 5px;
+
   text-decoration: none;
 }
 
@@ -122,6 +126,12 @@ p.caption {
   box-shadow:
     0 12px 25px rgba(0, 0, 0, 0.6),
     0 0 15px rgba(143, 150, 177, 0.4);
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .header-container {
