@@ -5,6 +5,7 @@ body {
   background: radial-gradient(circle at top, #1a0033, #05010a 80%);
   font-family: "Orbitron", sans-serif;
   color: #e6dcff;
+  cursor: pointer;
 }
 
 /* Reset spacing */
@@ -39,10 +40,6 @@ header {
   opacity: 0.8;
 }
 
-body {
-  cursor: arrow;
-}
-
 /* --- NAV BAR (NEW GAME UI FEATURE) --- */
 nav {
   position: sticky;
@@ -59,6 +56,7 @@ nav {
   border-bottom: 2px solid #8a2be2;
 
   box-shadow: 0 0 15px rgba(138, 43, 226, 0.6);
+  animation: glowPulse 3s infinite alternate;
 }
 
 nav a {
@@ -80,7 +78,7 @@ nav a:hover {
 /* --- CHARACTER LIST (Game Cards) --- */
 .character-list li {
   display: flex;
-  align-items: center;
+  align-items: column;
   gap: 20px;
 
   background: rgba(20, 10, 40, 0.8);
@@ -126,6 +124,13 @@ main {
   width: 90%;
 }
 
+.main-container {
+  background: rgba(10, 0, 20, 0.6);
+  border: 1px solid rgba(138, 43, 226, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+}
+
 /* Images = framed like game UI */
 main img {
   max-width: 100%;
@@ -157,7 +162,14 @@ footer p {
   color: #c084fc;
   text-align: center;
 }
-
+@keyframes glowPulse {
+  from {
+    box-shadow: 0 0 10px #8a2be2;
+  }
+  to {
+    box-shadow: 0 0 25px #a855f7;
+  }
+}
 /* --- MOBILE --- */
 @media (max-width: 600px) {
   .character-list li {
