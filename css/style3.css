@@ -159,9 +159,18 @@ footer {
 }
 
 footer p {
-  color: #c084fc;
+  color: #d7b8f7;
   text-align: center;
 }
+
+footer a {
+  color: #c084fc;
+}
+
+footer a:hover {
+  color: white;
+}
+
 @keyframes glowPulse {
   from {
     box-shadow: 0 0 10px #8a2be2;
