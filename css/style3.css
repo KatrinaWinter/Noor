@@ -75,6 +75,23 @@ nav a:hover {
   box-shadow: 0 0 25px #a855f7;
 }
 
+.prev-version,
+.next-version {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.prev-version {
+  left: 10px;
+}
+
+.next-version {
+  right: 10px;
+}
+
 /* --- CHARACTER LIST (Game Cards) --- */
 .character-list li {
   display: flex;

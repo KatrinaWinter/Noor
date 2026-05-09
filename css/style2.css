@@ -145,6 +145,67 @@ p.caption {
   gap: 15px;
 }
 
+/* --- NAV BAR (NEW GAME UI FEATURE) --- */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 5px;
+  background-color: rgba(47, 30, 63, 0.753);
+  backdrop-filter: blur(6px);
+  border-bottom: 2px solid rgb(143, 150, 177);
+
+  box-shadow: 0 0 15px rgba(73, 61, 85, 0.6);
+  animation: glowPulse 3s infinite alternate;
+}
+
+nav a {
+  padding: 5px 5px;
+  border: 2px solid rgb(143, 150, 177);
+  border-radius: 8px;
+  text-decoration: none;
+  color: rgb(143, 150, 177);
+  background: rgba(138, 43, 226, 0.1);
+  transition: all 0.2s ease;
+}
+
+nav a:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 12px 25px rgba(0, 0, 0, 0.6),
+    0 0 15px rgba(143, 150, 177, 0.4);
+
+  color: white;
+  box-shadow: 0 0 25px #a855f7;
+}
+
+.prev-version,
+.next-version {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.7rem;
+  text-decoration: none;
+}
+
+.prev-version {
+  left: 10px;
+}
+
+.next-version {
+  right: 10px;
+}
+
+nav a:visited {
+  color: rgb(143, 150, 177);
+}
+
+
 .header-container {
   display: flex;
   align-items: center;
