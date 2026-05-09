@@ -60,7 +60,7 @@ nav {
 }
 
 nav a {
-  padding: 10px 18px;
+  padding: 10px 10px;
   border: 2px solid #8a2be2;
   border-radius: 8px;
   text-decoration: none;
@@ -206,4 +206,19 @@ footer a:hover {
   nav {
     flex-wrap: wrap;
   }
+
+
+.prev-version {
+  left: 5px;
+}
+
+.next-version {
+  right: 5px;
+}
+
+.prev-version,
+.next-version {
+  font-size: 0.5rem;
+}
+
 }
